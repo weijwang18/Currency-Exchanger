@@ -1,7 +1,7 @@
 export default class CurrencyExchanger {
-  static getCurrency(countryCode){
+  static getCurrency(){
     return fetch(
-      `https://v6.exchangerate-api.com/v6/${process.env.API_KEY}/latest/${countryCode}`
+      `https://v6.exchangerate-api.com/v6/${process.env.API_KEY}/latest/USD`
     )
       .then(function (response) {
         if (!response.ok) {
