@@ -9,22 +9,22 @@
   <body>
     <div class="container">
       <h1>Currency Exchanger</h1>
-      <label for="currencies">Choose a currency:</label>
-      <select name="currencies" id="currencies">
-        <option value="CNY">Chinese Renminbi</option>
-        <option value="EUR">Euro</option>
-        <option value="GBP">Pound Sterling</option>
-        <option value="JPY">Japanese Yen</option>
-        <option value="MXN">Mexican Peso</option>
-      </select>
-      <form>
+      <form id="form">
+        <label for="currencies">Choose a currency:</label>
+        <select name="currencies" id="currencies">
+          <option value="CNY">Chinese Renminbi</option>
+          <option value="EUR">Euro</option>
+          <option value="GBP">Pound Sterling</option>
+          <option value="JPY">Japanese Yen</option>
+          <option value="MXN">Mexican Peso</option>
+        </select>
         <label for="amount">United States Dollar:</label>
-        <input id="amountInput" type="number" />
+        <input id="amountInput" type="number" required />
         <button id="covertButton" type="submit" class="btn">Submit</button>
       </form>
       <div class="showErrors"></div>
       <div class="output">
-        <p><span class="input"></span> United States Dollar equals</p>
+        <p><span id="input"></span> United States Dollar equals</p>
         <h4 id="output"></h4>
       </div>
     </div>
