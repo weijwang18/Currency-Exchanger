@@ -9,7 +9,6 @@
   <body>
     <div class="container">
       <h1>Currency Exchanger</h1>
-      <form id="form">
         <label for="currencies">Choose a currency:</label>
         <select name="currencies" id="currencies">
           <option value="CNY">Chinese Renminbi</option>
@@ -20,10 +19,9 @@
         </select>
         <label for="amount">United States Dollar:</label>
         <input id="amountInput" type="number" required />
-        <button id="covertButton" type="submit" class="btn">Submit</button>
-      </form>
+        <button id="covertButton" class="btn">Submit</button>
       <div class="showErrors"></div>
-      <div class="output">
+      <div class="outputResult">
         <p><span id="input"></span> United States Dollar equals</p>
         <h4 id="output"></h4>
       </div>
