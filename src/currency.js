@@ -4,12 +4,12 @@ export default class CurrencyExchanger {
       const response = await fetch(
         `https://v6.exchangerate-api.com/v6/${process.env.API_KEY}/pair/USD/${Code}/${inputAmount}`
       );
-      if (!response.ok) {
-        throw Error(response.status);
+      if (response.result === "error") {
+        throw Error(response["error-type"]);
       }
       return response.json();
     } catch (error) {
-      return error.cause;
+      return error.message;
     }
   }
 }
