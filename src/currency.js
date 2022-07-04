@@ -9,7 +9,8 @@ export default class CurrencyExchanger {
       }
       return response.json();
     } catch (error) {
-      return error.message;
+      return error.cause;
     }
   }
 }
+
