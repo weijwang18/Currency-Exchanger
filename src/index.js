@@ -16,6 +16,8 @@ $(document).ready(function () {
       $("#output").text(
         `${response.conversion_result} ${response.target_code}`
       );
+    } else if (response["error-type"] === "unsupported-code") {
+      $(".showErrors").text(`The currency in question doesn't exist.`);
     } else {
       $(".showErrors").text(`There was an error: ${response["error-type"]}`);
     }
