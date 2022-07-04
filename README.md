@@ -4,15 +4,14 @@
 
 #### Week 6 Independent Project
 
-[GitHub Pages](https://weijwang18.github.io/Currency-ExchangerCurrency-Exchanger/)
 
 ## Technologies Used
 
-HTML/CSS
-JavaScript
-Bootstrap
-JQuery
-webpack
+- HTML/CSS
+- JavaScript
+- Bootstrap
+- JQuery
+- webpack
 
 ## Description
 
