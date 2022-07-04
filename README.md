@@ -12,6 +12,7 @@
 - Bootstrap
 - JQuery
 - webpack
+- API
 
 ## Description
 
@@ -22,6 +23,10 @@ This web application allows users to type in an amount (in U.S. dollars) and the
 - Clone this repository to your desktop.
 - Open Git Bash if on Windows and terminal if on Mac.
 - CD to the repository.
+- Run this command $ touch .env
+- Visit the [ExchangeRate-API site](https://www.exchangerate-api.com/). Input your email address and click the "Get Free Key" button.
+- You'll be prompted to create an account with your email, first name and a password. Agree to the terms of use and click "Get Started!"
+- Place your token in the .env file. Name your API key variable API_KEY.
 - Run this command $ npm install.
 - Run this command $ npm run start.
 
